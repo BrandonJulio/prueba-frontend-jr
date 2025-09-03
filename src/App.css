@@ -11,7 +11,6 @@ html, body {
   padding: 30px;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  /* Fondo estilo masculino con tonos azules/grises */
   background: radial-gradient(circle at 20% 30%, #0f2027 0%, transparent 40%),
               radial-gradient(circle at 80% 20%, #2c5364 0%, transparent 40%),
               radial-gradient(circle at 40% 80%, #203a43 0%, transparent 40%),
@@ -24,8 +23,6 @@ html, body {
   color: #f5f5f5; 
 }
 
-
-/* Sutil animación aurora */
 .app-container::before {
   content: "";
   position: absolute;
@@ -54,7 +51,6 @@ html, body {
   margin-bottom: 10px;
 }
 
-/* Estilo buscador */
 .search-input {
   padding: 10px 14px;
   width: 280px;
@@ -69,7 +65,7 @@ html, body {
 }
 
 .search-input:focus {
-  border-color: #4a90e2;
+  border-color: #dfe24a;
   box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
 }
 
