@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+feat: consumir API y mostrar usuarios con diseño en tarjetas
+
+- Implementado consumo de API (JSONPlaceholder)
+- Listado de usuarios mostrando: Nombre, Correo y Ciudad
+- Creado componente UserCard para mostrar cada usuario
+- App maneja el estado y la lógica de carga/error
+- Añadidos estilos en CSS para mejorar la presentación
+- Funcionalidad extra: manejo de loading y error"
