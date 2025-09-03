@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #1c1c1c;
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  /* Fondo estilo masculino con tonos azules/grises */
+  background: radial-gradient(circle at 20% 30%, #0f2027 0%, transparent 40%),
+              radial-gradient(circle at 80% 20%, #2c5364 0%, transparent 40%),
+              radial-gradient(circle at 40% 80%, #203a43 0%, transparent 40%),
+              radial-gradient(circle at 70% 70%, #2c3e50 0%, transparent 40%),
+              #1c1c1c;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  color: #f5f5f5; 
+}
+
+
+/* Sutil animación aurora */
+.app-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(80px);
+  opacity: 0.7;
+  z-index: -1;
+  animation: aurora 15s ease-in-out infinite alternate;
+}
+
+@keyframes aurora {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.1) translate(-20px, 20px); }
+  100% { transform: scale(1) translate(20px, -20px); }
+}
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.app-header .logo {
+  width: 380px;
+  margin-bottom: 10px;
+}
+
+/* Estilo buscador */
+.search-input {
+  padding: 10px 14px;
+  width: 280px;
+  max-width: 90%;
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  margin-bottom: 100px; 
+}
+
+.search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Estilos para mensajes de estado */
+.status {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilo específico para errores */
+.error {
+  background-color: #fff1f0;
+  color: #cf1322;
+  border: 1px solid #ffa39e;
+  box-shadow: 0 2px 8px rgba(207, 19, 34, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
